@@ -11,7 +11,7 @@
 	<groupId>com.multiplicar</groupId>
 	<artifactId>tabla-multiplicar</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>tabla-multiplicar</name>
 	<description>Primer ejercicio</description>
 	<url/>

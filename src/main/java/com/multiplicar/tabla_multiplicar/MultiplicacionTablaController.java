@@ -10,7 +10,7 @@ public class MultiplicacionTablaController {
     @GetMapping("/table/{number}")
     public String getMultiplicationTable(@PathVariable int number) {
         StringBuilder table = new StringBuilder("<h1>Tabla de multiplicar del " + number + ":</h1><ul>");
-        for (int i = 1; i <= 10; i++) {
+        for (int i = 1; i <= 12; i++) {
             table.append("<li>").append(number).append(" x ").append(i).append(" = ").append(number * i).append("</li>");
         }
         table.append("</ul>");
