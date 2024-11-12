@@ -53,7 +53,6 @@ Una vez que la aplicación esté en ejecución, acceda al endpoint para generar 
    Si deseas contribuir a este proyecto, siéntete libre de hacer un fork y enviar tus cambios mediante un pull request.
 
 ## Licencia
-   Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para obtener más detalles.
    Autor
    Cristina Colcha
 
