@@ -50,7 +50,7 @@ Una vez que la aplicación esté en ejecución, acceda al endpoint para generar 
    http://localhost:8080/table/5
 
 ## Contribuciones
-   Si deseas contribuir a este proyecto, siéntete libre de hacer un fork y enviar tus cambios mediante un pull request.
+   Si deseas contribuir a este proyecto, debes hacer un fork y enviar tus cambios mediante un pull request.
 
 ## Licencia
    Autor
