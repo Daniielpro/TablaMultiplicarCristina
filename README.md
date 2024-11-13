@@ -1,62 +1,51 @@
-## TABLAMULTIPLICARCRISTINA## 
-
-    Este proyecto permite generar la tabla de multiplicar para un número dado, multiplicando del 1 al 12. Este proyecto está diseñado como una aplicación Spring Boot y contiene los controladores y configuraciones necesarias para gestionar las solicitudes de generación de tablas.
-
-## Estructura del Proyecto## 
-
-    TABLAMULTIPLICAR/
-    ├── .mvn/                       # Configuraciones de Maven 
-    ├── src/
-    │   ├── main/
-    │   │   ├── java/com/multiplicar/tabla_multiplicar/
-    │   │   │   ├── MultiplicacionTablaController.java    # Controlador principal para la tabla de multiplicar
-    │   │   │   ├── ServletInitializer.java               # Configuración del servlet para inicializar Spring Boot
-    │   │   │   └── TablaMultiplicarApplication.java      # Clase principal que inicia la aplicación Spring Boot
-    │   │   └── resources/                                # Directorio para archivos de recursos
-    │   └── test/                                         # Directorio para pruebas
-    ├── target/                                           # Archivos generados después de la compilación
-    ├── .gitignore                                        # Archivos y carpetas a ignorar por Git
-    ├── dockerfile                                        # Archivo Docker para construir la imagen de la aplicación
-    ├── pom.xml                                           # Archivo de configuración de Maven
-    └── README.md                                         # Documentación del proyecto
-
-## Requisitos ##
-    Java 8 o superior
+ 
+## TABLAMULTIPLICARCRISTINA###. 
+    This project allows to generate the multiplication table for a given number, multiplying from 1 to 12. This project is designed as a Spring Boot application and contains the necessary drivers and configurations to handle the table generation requests.
+## Project Structure 
+    TABLAMULTIPLY/
+    ├── .mvn/ # # Maven configurations. 
+    ├─── src/
+    │ ├─── main/
+    │ │ ├─── java/com/multiply/multiply/ table_multiply/
+    │ │ │ │ ├─── MultiplicacionTablaController.java # Main controller for the multiply table.
+    │ │ │ │ ├─── ServletInitializer.java # Servlet configuration to initialize Spring Boot.
+    │ │ │ │ └─└─ TableMultiplyApplication.java # Main class that initializes Spring Boot application.
+    │ │ │ └─└─ resources/ # Directory for resource files.
+    │ └└── test/ # Directory for tests
+    ├─── target/ # Files generated after compilation.
+    ├─── .gitignore # Files and folders to be ignored by Git.
+    ├─── dockerfile # Docker file to build the application image.
+    ├─── pom.xml # Maven configuration file.
+    └└─── README.md # Project documentation.
+## Requirements ##
+    Java 8 or higher
     Spring Boot
     Maven
-## Instalación
-1. Clona este repositorio:
+## Installation
+1. Clone this repository:
    git clone 
-2. Navega al directorio del proyecto:
-
-   cd TABLAMULTIPLICAR
-3. Construye el proyecto con Maven:
-
+2. Navigate to the project directory:
+   cd TABLAMULTIPLATE
+3. Build the project with Maven:
    mvn clean install
-## Ejecuta la aplicación:
-
+## Run the application:
    mvn spring-boot:run
-## Uso
-Una vez que la aplicación esté en ejecución, acceda al endpoint para generar la tabla de multiplicar.
-
+## Usage
+Once the application is running, access the endpoint to generate the multiplication table.
    Endpoint
    URL: http://localhost:8080/table/{number}
-   Método HTTP: GET
-## Parámetro:
-   number: Número entero para el cual se generará la tabla de multiplicar.
-   Ejemplo
-   Si deseas obtener la tabla de multiplicar del número 5, realiza una solicitud GET a:
+   HTTP Method: GET
+## Parameter:
+   number: Integer for which the multiplication table will be generated.
+   Example
+   If you want to get the multiplication table for the number 5, make a GET request to:
    
    http://localhost:8080/table/5
-
-## Contribuciones
-   Si deseas contribuir a este proyecto, debes hacer un fork y enviar tus cambios mediante un pull request.
-
-## Licencia
-   Autor
+## Contributions
+   If you wish to contribute to this project, feel free to make a fork and submit your changes via a pull request.
+## Author
    Cristina Colcha
-
-   Esta estructura es visualmente más agradable y utiliza un formato de árbol para mostrar la organización de los archivos en el proyecto. ¡Espero que te guste!
+   This structure is visually nicer and uses a tree format to show the organization of the files in the project. hope you like it!
 
 
 
