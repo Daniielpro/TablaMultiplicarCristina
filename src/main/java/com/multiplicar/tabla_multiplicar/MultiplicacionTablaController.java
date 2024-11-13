@@ -1,29 +1,19 @@
 package com.multiplicar.tabla_multiplicar;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class MultiplicacionTablaController {
 
-    @GetMapping("/")
-    public String showForm(Model model) {
-        // Se inicializa con una tabla vacía
-        model.addAttribute("table", "");
-        return "index"; // Carga index.html
-    }
-
-    @PostMapping("/")
-    public String getMultiplicationTable(@RequestParam int number, Model model) {
+    @GetMapping("/table/{number}")
+    public String getMultiplicationTable(@PathVariable int number) {
         StringBuilder table = new StringBuilder("<h1>Tabla de multiplicar del " + number + ":</h1><ul>");
         for (int i = 1; i <= 12; i++) {
             table.append("<li>").append(number).append(" x ").append(i).append(" = ").append(number * i).append("</li>");
         }
         table.append("</ul>");
-        model.addAttribute("table", table.toString()); // Pasa la tabla generada al modelo
-        return "index"; // Devuelve a la misma página
+        return table.toString();
     }
 }
