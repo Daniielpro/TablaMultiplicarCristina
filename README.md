@@ -1,5 +1,5 @@
  
-## TABLAMULTIPLICARCRISTINA###. 
+## TABLAMULTIPLICAR###. 
     This project allows to generate the multiplication table for a given number, multiplying from 1 to 12. This project is designed as a Spring Boot application and contains the necessary drivers and configurations to handle the table generation requests.
 ## Project Structure 
     TABLAMULTIPLY/
